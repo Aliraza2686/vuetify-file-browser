@@ -160,6 +160,7 @@ export default {
                 this.items = response.data;
             } else {
                 // TODO: load file
+                this.items = []
             }
             this.$emit("loading", false);
         },
@@ -206,5 +207,6 @@ export default {
 <style lang="scss" scoped>
 .v-card {
     height: 100%;
+    border-radius : 5px;
 }
 </style>
